@@ -110,6 +110,54 @@ input[type=submit]:hover{background:var(--brand-color);}
 
 .site-nav a{text-decoration:none;}
 
+.projects-box {
+    width: 100%;
+    max-width: 900px;
+}
+
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 30%;
+    max-width: 100%;
+}
+
+.project-card {
+    background: #121212;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+    transition: transform 0.2s ease-in-out, max-height 0.2s ease-in-out;
+    cursor: pointer;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 50px;
+}
+
+.project-card.expanded {
+    max-height: 500px;
+}
+
+.project-card h3 {
+    margin: 0;
+}
+
+.project-card p {
+    display: none;
+}
+
+.project-card.expanded p {
+    display: block;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+
 /* Responsive adjustments for smaller screens */
 @media screen and (max-width: 1024px) {
   nav ul {
