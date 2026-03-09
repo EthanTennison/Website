@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home | Ethan Tennison</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="home">
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="experience.html">Experience</a></li>
+             <li><a href="resume.html">Résumé</a></li>
+             <li><a href="contact.html">Contact</a></li>
+         </ul>
+     </nav>
+    <main class="layout">
+        <div class="left-column">
+            <div class="profile-container">
+                <img src="images/profile.jpg" id="profile-pic" alt="Ethan Tennison">
+                <h1 class="page-heading">Ethan Tennison</h1>
+                <a href="https://www.wgu.edu" target="_blank" rel="noopener noreferrer" class="site-nav">Western Governors University</a>            
+                <h5 class="attribute">Pursuing B.S. in Computer Science</h5>
+                <h5 class="date">Expected December 2027</h5>
+            </div>
+            <div class="slideshow-container">
+                <div class="slideshow">
+                    <div class="mySlides fade">
+                        <img src="images/img1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/img2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/img3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/img4.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/img5.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <div class="button-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>            
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="profile-main">
+                <h1 class="page-heading">About Me</h1>
+                <p class="page-intro">My name is Ethan Tennison, I am a Computer Science student at <span style="color: rgb(0, 33, 104);">Western Governors University</span> with an interest in software development, automation and development workflows, and user interface design. I enjoy creating projects with a focus on functionality and usability. While I pursue my degree, I am actively working on projects and coursework that will develop these skills further and open the way for valuable internships.</p>
+                <div class="profile-subsections">
+                    <div class="skills">
+                        <h2 class="section-heading">Skills</h2>
+                        <ul>
+                            <li>Python, Java, and C</li>
+                            <li>Web development (HTML, CSS, React)</li>
+                            <li>Version control systems (Git)</li>
+                            <li>Problem-solving and analytical skills</li>
+                            <li>Common sense</li>
+                            <li>Communication and teamwork abilities</li>
+                        </ul>
+                    </div>
+                    <div class="interests">
+                        <h2 class="section-heading">Interests</h2>
+                        <ul>
+                            <li>Software Development</li>
+                            <li>Healthcare</li>
+                            <li>UI/UX Design</li>
+                            <li>Music Theory</li>
+                            <li>Culinary Arts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </main> 
+    <footer>
+        <p class="footer-text">
+            <a href="https://github.com/EthanTennison" target="_blank" rel="noopener noreferrer" class="site-nav">GitHub</a> •
+            <a href="https://www.linkedin.com/in/ethan-tennison-468a65313/" target="_blank" rel="noopener noreferrer" class="site-nav">LinkedIn</a>
+            <br>
+        </p>
+    </footer>
+    <script src="js/slideshow.js"></script>
+</body>
+</html>
