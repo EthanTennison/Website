@@ -109,3 +109,112 @@ input[type=submit]:hover{background:var(--brand-color);}
     width:100%;max-width:600px;text-align:center;margin:0 auto;}
 
 .site-nav a{text-decoration:none;}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 1024px) {
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    gap: 1.5rem;
+  }
+
+  .layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem auto;
+  }
+
+  .left-column, .right-column {
+    width: 90vw;
+  }
+
+  .home .right-column {
+    width: 90vw;
+  }
+
+  .profile-container {
+    width: 40vw;
+  }
+
+  #profile-pic {
+    width: 30vw;
+  }
+
+  .profile-main {
+    width: 90vw;
+  }
+
+  .profile-main .page-heading {
+    font-size: 3.5vw;
+  }
+
+  .profile-main .page-intro {
+    font-size: 1.5vw;
+    width: 100%;
+  }
+
+  .profile-subsections {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .skills, .interests {
+    width: 80%;
+  }
+
+  .slideshow-container {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html, body {
+    font-size: 14px;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+
+  .page-heading {
+    width: 90vw;
+    margin: 1.5rem auto;
+  }
+
+  .page-intro {
+    width: 90vw;
+    margin: 1rem auto;
+  }
+
+  .profile-container {
+    width: 60vw;
+  }
+
+  #profile-pic {
+    width: 40vw;
+  }
+
+  .profile-main .page-heading {
+    font-size: 5vw;
+  }
+
+  .profile-main .page-intro {
+    font-size: 2.5vw;
+  }
+
+  .section-heading {
+    width: 90vw;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+  }
+
+  .contact-box {
+    max-width: 95vw;
+  }
+}
+
